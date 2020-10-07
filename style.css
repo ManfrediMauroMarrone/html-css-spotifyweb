@@ -17,7 +17,7 @@ body{
     height: calc(100vh - 100px);
     padding: 10px;
     flex-shrink: 0;
-    color: white;
+    color: #E4E4E4;
 }
 
 .sidebar a:hover{
@@ -67,16 +67,40 @@ body{
     text-decoration: none;
     color: #E4E4E4;
 }
+
+/* ----------------------------------------------nav----------- */
+.nav{
+    height: 100px;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul{
+    list-style-type: none;
+}
+
+.nav ul li{
+    display: inline-block;
+    padding-right: 50px;
+    font-weight: 600;
+}
+
+
+
+.nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #E4E4E4;
+}
+
 .main-section{
     background-color: green;
     height: calc(100vh - 100px);
     flex-grow: 1;
 }
 
-.nav{
-    height: 100px;
-    background-color: purple;
-}
 
 .player{
     height: 100px;
