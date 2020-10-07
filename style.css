@@ -20,6 +20,11 @@
     height: calc(100vh - 100px);
 }
 
+.nav{
+    height: 100px;
+    background-color: purple;
+}
+
 .player{
     height: 100px;
     background-color: blue;
