@@ -3,21 +3,74 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Lato', sans-serif;
+}
 
 .container{
     display: flex;
 }
 
 .sidebar{
-    background-color: red;
+    background-color: #040404;
     width: 200px;
     height: calc(100vh - 100px);
+    padding: 10px;
+    flex-shrink: 0;
+    color: white;
 }
 
+.sidebar a:hover{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.logo span{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 600;
+    vertical-align: super;
+}
+
+.logo i{
+    font-size: 45px;
+}
+
+.menu{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.menu li{
+    padding-bottom: 5px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #E4E4E4;
+}
+
+
+.library{
+    padding-top: 20px;
+}
+
+.library li:first-child{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.library li{
+    padding-bottom: 5px;
+}
+
+.library li a{
+    text-decoration: none;
+    color: #E4E4E4;
+}
 .main-section{
     background-color: green;
-    width: 100%;
     height: calc(100vh - 100px);
+    flex-grow: 1;
 }
 
 .nav{
