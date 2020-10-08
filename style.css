@@ -83,7 +83,7 @@ h1{
 #hamburger{
     color: white;
     display: none;
-    padding-left: 10px;
+    padding-left: 20px;
     font-size: 30px;
 }
 
@@ -191,6 +191,7 @@ h1{
 
 .artists-section-row1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -199,7 +200,7 @@ h1{
 .menu-card{
     height: 200px;
     width: 200px;
-    background-color: red;
+    padding: 20px 0;
 }
 
 .menu-card img{
@@ -270,7 +271,6 @@ h1{
 
 .player-center-bot input[type=range]{
     width: 100%;
-    background: white;
 }
 
 .player-right{
@@ -283,7 +283,34 @@ h1{
     padding-right: 10px;
 }
 
-@media all and (max-width: 990px) {
+@media all and (max-width: 480px) {
+    .menu-text,
+    .logo span,
+    .library,
+    .album-cover img{
+        display: none;
+    }
+
+    .player-left{
+        padding-left: 0;
+    }
+
+    .player-center{
+        float: left;
+        padding-left: 60px;
+    }
+
+    .artist-song{
+        font-size: 12px;
+    }
+
+    .player-center-top{
+        width: 150px;
+    }
+
+}
+
+@media all and (max-width: 768px) {
     #hamburger{
         display: block;
     }
@@ -315,7 +342,6 @@ h1{
     }
     .player-center{
         float: left;
-        padding-left: 75px;
     }
 
     .player-right{
