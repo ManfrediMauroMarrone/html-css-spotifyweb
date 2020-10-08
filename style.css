@@ -13,7 +13,6 @@ body{
 
 .sidebar{
     background-color: #040404;
-    width: 200px;
     height: calc(100vh - 100px);
     padding: 10px;
     flex-shrink: 0;
@@ -75,6 +74,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#hamburger{
+    color: white;
+    display: none;
+    padding-left: 10px;
+    font-size: 30px;
 }
 
 .nav ul{
@@ -168,10 +174,144 @@ body{
     background-color: green;
     height: calc(100vh - 100px);
     flex-grow: 1;
+    overflow: auto;
 }
 
 
+.artists-section-container{
+    max-width: 100%;
+    padding: 0 50px;
+    background-color: red;
+}
+
+.artists-section-row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-card{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+.menu-card img{
+    height: 100%;
+}
+
+/* -------------------------------player------------------- */
 .player{
     height: 100px;
-    background-color: blue;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-center,
+.player-left,
+.player-right{
+    height: 100%;
+    background-color: #282828;
+    /* flex-grow: 1; */
+}
+
+.player-left{
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+}
+
+.album-cover{
+    height: 60px;
+    display: inline-block;
+}
+
+.artist-song{
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: relative;
+    color: white;
+}
+
+.artist-song span{
+    display: block;
+}
+
+.album-cover img{
+    height: 100%;
+}
+
+.player-center-top{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    color: white;
+}
+
+.player-center-top i:nth-child(3){
+    font-size: 30px;
+}
+
+.player-center-bot{
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.player-center-bot input[type=range]{
+    width: 100%;
+    background: white;
+}
+
+.player-right{
+    color: white;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+
+.player-right i{
+    padding-right: 10px;
+}
+
+@media all and (max-width: 990px) {
+    #hamburger{
+        display: block;
+    }
+
+    .nav ul{
+        display: none;
+    }
+
+    .nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .player{
+        display: block;
+    }
+
+    .player-left{
+        float: left;
+    }
+
+    .album-cover{
+        float: left;
+    }
+
+    .artist-song{
+        float: left;
+    }
+    .player-center{
+        float: left;
+        padding-left: 75px;
+    }
+
+    .player-right{
+        display: none;
+    }
 }
